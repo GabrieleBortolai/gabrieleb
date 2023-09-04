@@ -1,0 +1,30 @@
+# Ignore specific file
+#myfile.txt
+
+# Ignore files with a specific extension
+*.log
+*.tmp
+.bash_history
+.bash_logout
+.bashrc
+.profile
+.wget-hsts
+examples.desktop
+.cache
+.dotnet
+.local
+.gnupg
+.config
+.w3m
+.vscode-server
+.conda
+__pycache__
+.ipython
+.jupyter
+.nv
+.ssh
+Plot
+Checkpoint
+Checkpoint_copy
+GitHub
+telegram_bot.py
