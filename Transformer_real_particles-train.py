@@ -86,7 +86,7 @@ class Transformer(nn.Module):
             nn.Dropout1d(p = p),
             nn.LeakyReLU(neg_slope),
 
-            nn.Linear(30, 2,  device = device),
+            nn.Linear(30, 3,  device = device),
         )
         
         self.apply(self._init_weights)
