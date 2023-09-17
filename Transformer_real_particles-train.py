@@ -136,9 +136,9 @@ class MyLoss (nn.Sequential):
 
         # ALPHA = 0.2
 
-        loss = torch.mean((torch.abs(E-W)/W))
+        # loss = torch.mean((torch.abs(E-W)/W))
         # loss = torch.mean((torch.abs(E-W)/W) + (torch.abs(E-W)/(E + 2e-2)))
-        # loss = torch.mean(ALPHA * (torch.abs(E-W)/W) + (1 - ALPHA) * (torch.abs(E-W)/(E + 2e-2)))        
+        loss = torch.mean(ALPHA * (torch.abs(E-W)/W) + (1 - ALPHA) * (torch.abs(E-W)/(E + 2e-2)))        
 
         return loss
 
@@ -223,7 +223,7 @@ neg_slope = 1e-2
 
 p = 0.1
 
-ALPHA = 0.2
+ALPHA = 0.6
 
 model = Transformer(d_model, num_layers, p, neg_slope, n_head, pos_dropout).to(device)#modificare
 
