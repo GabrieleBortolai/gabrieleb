@@ -1,16 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[9]:
-
 
 import numpy as np
 import torch
 
 from data_gen_utils import NP2_gen, plot_training_data
-
-
-# In[18]:
 
 
 def Sig(sig_type, NS_p, rng):
@@ -25,9 +20,6 @@ def Sig(sig_type, NS_p, rng):
         sig = torch.tensor(rng.exponential(scale=1, size=(NS_p,1)))
 
     return sig
-
-
-# In[27]:
 
 
 def Generator(seed, NS, NR, N_R, sig_type, Pois_ON):
